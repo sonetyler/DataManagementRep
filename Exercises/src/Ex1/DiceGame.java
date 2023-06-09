@@ -9,6 +9,6 @@ public class DiceGame {
 		int die2 = (int)Math.floor(Math.random()* (max - min) + min);
 		System.out.println("Die 1: " + die1);
 		System.out.println("Die 2: " + die2);
-		System.out.println("Total value: " + (die1 + die2));
+		System.out.println("Total value " + (die1 + die2));
 	}
 }
