@@ -9,6 +9,7 @@ public class DiceGame {
 		Scanner s = new Scanner(System.in);
 		String name = s.next();
 		System.out.printf("Hello, %s!\n\n", name);
+		s.close();
 		
 		//Dice Game
 		System.out.println("rolling dice..");
@@ -21,10 +22,10 @@ public class DiceGame {
 		System.out.println("Die 2: " + die2);
 		System.out.println("Total value: " + (total));
 		if(total > 7) {
-			System.out.println("You Won!");
+			System.out.printf("%s Won!\n", name);
 		}
 		else {
-			System.out.println("You Lost.");
+			System.out.printf("%s Lost.\n", name);
 		}
 	}
 }
