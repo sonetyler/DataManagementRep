@@ -1,7 +1,16 @@
 package Ex1;
 
+import java.util.Scanner;
+
 public class DiceGame {
 	public static void main(String[]args) {
+		//Outputs: Hello, 'name'!
+		System.out.println("What is your name?");
+		Scanner s = new Scanner(System.in);
+		String name = s.next();
+		System.out.printf("Hello, %s!\n\n", name);
+		
+		//Dice Game
 		System.out.println("rolling dice..");
 		int max = 6;
 		int min = 1;
